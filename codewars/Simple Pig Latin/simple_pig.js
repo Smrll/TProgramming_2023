@@ -7,5 +7,3 @@ function pigIt(str){
     return words.join(' ')
   }
 
-
-console.log(pigIt('Pig latin is cool'))

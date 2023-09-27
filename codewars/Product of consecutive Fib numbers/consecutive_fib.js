@@ -12,5 +12,3 @@ function productFib(prod){
         return [fl, fr, false]
     }
   }
-
-  productFib(500)
