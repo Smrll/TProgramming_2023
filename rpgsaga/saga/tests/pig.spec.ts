@@ -2,14 +2,12 @@ import { Pig } from '../src/pig';
 
 describe('Testing pig constructor', () => {
     it('Pig should be created', () => {
-      const first = new Pig(500, "DIV69");
+      const pig = new Pig(500, "DIV69");
+      expect(pig.mass).toEqual(500);
+      expect(pig.identificator).toEqual("DIV69");
     });
     it('Pig with invalid mass', () => {
         expect(() => new Pig(10, "RIP38")).toThrow(Error("Pig's mass should be 50 kg or bigger."));
-    });
-    it('Pig identificator should be assigned', () => {
-        const pig = new Pig(100, "REZ27");
-        expect(pig.identificator).toEqual("REZ27");
     });
 });
 
